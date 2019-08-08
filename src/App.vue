@@ -14,6 +14,7 @@
 
 <script>
 import 'bulma/css/bulma.min.css'
+import 'animate.css/animate.min.css'
 import Navbar from '@/components/Navbar'
 export default {
   components : {
