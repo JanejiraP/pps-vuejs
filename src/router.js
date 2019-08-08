@@ -12,6 +12,10 @@ const Three = () => import('@/components/Three' /* webpackChunkName: 'Three' */)
 const User = () => import('@/pages/User' /* webpackChunkName: 'User' */)
 const UserProfile = () => import('@/pages/UserProfile' /* webpackChunkName: 'UserProfile' */)
 const PersonForm = () => import('@/pages/PersonForm' /* webpackChunkName: 'PersonForm' */)
+const Nested = () => import('@/pages/Nested' /* webpackChunkName: 'nested' */)
+const UserListItem = () => import('@/components/UserListItem' /* webpackChunkName: 'UserListItem' */)
+const Vuex = () => import('@/pages/Vuex' /* webpackChunkName: 'Vuex' */)
+const Chart = () => import('@/pages/Chart' /* webpackChunkName: 'Chart' */)
 
 Vue.use(VueRouter)
 
@@ -21,7 +25,11 @@ const routes = [
   { path: '/three', component: Three },
   { path: '/user', component: User },
   { path: '/user/:id', component: UserProfile },
-  { path: '/form', component: PersonForm }
+  { path: '/form', component: PersonForm },
+  { path: '/nested', component: Nested },
+  { path: '/userListItem', component: UserListItem },
+  { path: '/vuex', component: Vuex },
+  { path: '/chart', component: Chart }
 ]
 
 const router = new VueRouter({
